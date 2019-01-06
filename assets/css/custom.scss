@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600');
+
+
+$primary: black;
+$body-color: #F2F2F2;
+$body-bg: black;
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-weight-base: 100;
+
+$dark: #111;
+
+.team{
+    background: url("../img/Equipe.jpg") center;
+}
+.contact{
+    background: url("../img/Contato.jpg") center;
+}
+footer{
+    background: url("../img/bg-footer.jpg") center;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
