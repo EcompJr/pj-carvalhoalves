@@ -4,19 +4,137 @@
 $primary: black;
 $body-color: #F2F2F2;
 $body-bg: black;
-$font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-sans-serif: 'Raleway',
+sans-serif;
 $font-weight-base: 100;
 
 $dark: #111;
 
-.team{
+.hero .owl-carousel .hero-content {
+    min-height: 100vh;
+    background: center/100%;
+}
+
+#oescritorio h1 {
+    position: relative;
+}
+
+#oescritorio h1:not(.display-3)::after {
+    content: '';
+    display: block;
+    width: 200px;
+    margin: 20px auto 0 25px;
+    height: 2px;
+    background: #fff;
+}
+
+#oescritorio h1:not(.display-3)::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: 20px 0 0 auto;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+#areasdeatuacao h1 {
+    position: relative;
+}
+
+#areasdeatuacao h1::after {
+    content: '';
+    display: block;
+    width: 300px;
+    margin: 20px auto 60px auto;
+    height: 2px;
+    background: #fff;
+}
+
+#areasdeatuacao h1::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 0 auto;
+    background: #fff;
+    bottom: -9px;
+    left: calc(50% - 10px);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 6px solid black;
+    background-clip: padding-box;
+}
+
+
+#contato h1 {
+    position: relative;
+}
+
+#contato h1::after {
+    content: '';
+    display: block;
+    width: 300px;
+    margin: 20px auto 60px auto;
+    height: 2px;
+    background: #fff;
+}
+
+#contato h1::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 0 auto;
+    background: #fff;
+    bottom: -9px;
+    left: calc(50% - 10px);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 6px solid black;
+    background-clip: padding-box;
+}
+
+
+
+.hero .owl-carousel .owl-dots {
+    transform: translateY(-50px);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #F2F2F2;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #111
+}
+
+.team {
     background: url("../img/Equipe.jpg") center;
 }
-.contact{
-    background: url("../img/Contato.jpg") center;
+
+.contact {
+    // background: url("../img/Contato.jpg") center;
 }
-footer{
+
+footer {
     background: url("../img/bg-footer.jpg") center;
+}
+
+#areasdeatuacao .owl-item>i {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 auto;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
