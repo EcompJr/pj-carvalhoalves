@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600");
+@font-face{
+  font-family: 'Koblenz';
+  src: url('../fonts/Koblenz-Serial-ExtraLight-Regular.ttf') format('truetype')
+}
 
 .hero .owl-carousel .hero-content {
-  min-height: 100vh;
+  min-height: calc(70vh - 125px);
   text-shadow: 0px 0 6px #fff;
   background: center/cover no-repeat
 }
@@ -23,16 +26,12 @@
 #areasdeatuacao h1::before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 20px 0 0 auto;
-  background: #fff;
-  bottom: -9px;
-  left: calc(50% - 10px);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border: 6px solid black;
+  width: 50px;
+  height: 50px;
+  background: url(../img/logo-branca.png) #000 center/100% no-repeat;
+  bottom: -26px;
+  left: calc(50% - 25px);
+  border: 10px solid black;
   background-clip: padding-box;
 }
 
@@ -52,16 +51,12 @@
 #contato h1::before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 20px 0 0 auto;
-  background: #fff;
-  bottom: -9px;
-  left: calc(50% - 10px);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border: 6px solid black;
+  width: 50px;
+  height: 50px;
+  background: url(../img/logo-branca.png) #000 center/100% no-repeat;
+  bottom: -26px;
+  left: calc(50% - 25px);
+  border: 10px solid black;
   background-clip: padding-box;
 }
 
@@ -138,7 +133,7 @@ footer {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-sans-serif: "Koblenz", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -171,9 +166,9 @@ section {
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Koblenz", sans-serif;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.5;
   color: #F2F2F2;
   text-align: left;
@@ -6750,7 +6745,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Koblenz", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6875,7 +6870,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Koblenz", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
